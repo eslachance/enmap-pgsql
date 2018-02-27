@@ -1,0 +1,32 @@
+{
+  "name": "enmap-pgsql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "types": "typings/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eslachance/enmap-pgsql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eslachance/enmap-pgsql/issues"
+  },
+  "homepage": "https://github.com/eslachance/enmap-pgsql#readme",
+  "keywords": [],
+  "author": "Evelyne Lachance <eslachance@gmail.com> (http://evie.codes/)",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^7.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
