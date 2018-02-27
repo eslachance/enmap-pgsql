@@ -4,6 +4,8 @@ Enmap-PGSql is a provider for the [Enmap](https://www.npmjs.com/package/enmap) m
 
 ## Installation
 
+> enmap-psql requires a PostgreSQL server of version 9.5 or higher due to the use of the new "upsert"-ish feature (on conflict update). Lower versions *will not work*.
+
 To install Enmap-PGSql simply run `npm i enmap-pgsql`.
 
 ## Usage

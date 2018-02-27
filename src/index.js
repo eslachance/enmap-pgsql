@@ -63,7 +63,7 @@ class EnmapPGSQL {
       throw new Error('SQLite require keys to be strings or numbers.');
     }
     const insert = typeof val === 'object' ? JSON.stringify(val) : val;
-    this.db.query(`INSERT INTO ${this.name} (key, value) VALUES ($1, $2) ON CONFLICT (key, value) DO UPDATE SET value = $2;`, [key, insert]);
+    this.db.query(`INSERT INTO ${this.name} (key, value) VALUES ($1, $2) ON CONFLICT (key) DO UPDATE SET value = $2;`, [key, insert]);
   }
 
   /**
