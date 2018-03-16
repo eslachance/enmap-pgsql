@@ -50,6 +50,13 @@ class EnmapPGSQL {
   close() {
     this.db.close();
   }
+  
+  /**
+   * Deletes all the Keys of Enmap
+   */
+  bulkDelete() {
+    this.db.query(`TRUNCATE ${this.name}`)
+  }
 
   /**
    * Set a value to the Enmap.
